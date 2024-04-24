@@ -1,0 +1,13 @@
+<div class="qcm" *ngIf="qcm">
+  <h1 class="qcm-title">{{ qcm.intitule }}</h1>
+  <div class="qcm-qr" *ngFor="let question of qcm.questions">
+    <div class="qcm-qr-question">{{ question.questions }}</div>
+    <div class="qcm-qr-reponse" *ngFor="let reponse of question.reponses">
+      <input type="radio" id="reponse.reponses" value="reponse.reponses" />
+      <label for="reponse.reponses">{{ reponse.reponses }}</label>
+    </div>
+  </div>
+  <button class="qcm-validate" [routerLink]="['/qcms']" (click)="validate()">
+    Valider
+  </button>
+</div>

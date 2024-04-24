@@ -1,0 +1,17 @@
+<div class="qcms">
+  <h1 class="qcms-title">Welcome</h1>
+  <div class="qcms-list">
+    <li *ngFor="let q of qcms" class="qcms-list-qcm">
+      <h2 class="qcms-list-qcm-name">{{ q.intitule }}</h2>
+      <div class="qcms-list-qcm-level">
+        Niveau: <b>{{ q.niveau }}</b>
+      </div>
+      <div class="qcms-list-qcm-nbQuestion">
+        Nombre de questions: <b>{{ q.nbQuestions }}</b>
+      </div>
+      <A class="qcms-list-qcm-open" [routerLink]="['/qcms/qcm', q.id]">
+        Ouvrir
+      </A>
+    </li>
+  </div>
+</div>

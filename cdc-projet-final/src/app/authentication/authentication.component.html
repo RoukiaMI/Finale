@@ -1,0 +1,25 @@
+<div class="authentication">
+  <h1 class="authentication-title">{{ title }}</h1>
+  <form
+    class="authentication-form"
+    [formGroup]="authenticationForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <div class="authentication-form-username">
+      <label class="authentication-form-username-label" for="username"
+        >Identifiant</label
+      >
+      <input id="username" type="text" formControlName="username" />
+    </div>
+    <div class="authentication-form-password">
+      <label class="authentication-form-password-label" for="password"
+        >Mot de passe</label
+      >
+      <input id="password" type="password" formControlName="password" />
+    </div>
+
+    <button class="authentication-form-validate" type="submit">
+      Se connecter
+    </button>
+  </form>
+</div>
