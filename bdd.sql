@@ -1,3 +1,4 @@
+CREATE SCHEMA `qcm` ;
 CREATE TABLE `qcm`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `username` VARCHAR(45) NULL,
