@@ -4,6 +4,7 @@ Telecharger ce dossier:<br/>
 Ce projet utilise springboot et angular 18.<br/> 
 Il faut avoir la version 20 de nodeJs de préference sionon une version compatible avec la version angular utilisé.<br/>
 Il faut avoir un IDE Java (Eclipse ou IntelliJ)
+Il faut également la version  8 de MySQL et faire passer le script bdd.sql.
 
 # Exposition de l'api du BackEnd 
 executer le fichier projet/ProjetApplication.java <br/>
