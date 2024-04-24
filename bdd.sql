@@ -41,10 +41,10 @@ CREATE TABLE `qcm`.`reponses` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION);
 
-insert into qcm.user(password,role,username)('12345','stagiaire','toto');
-insert into qcm.user(password,role,username)('12345','stagiaire','Jean');
-insert into qcm.user(password,role,username)('12345','stagiaire','Awaleh');
-insert into qcm.user(password,role,username)('12345','stagiaire','Edna');
+insert into qcm.user(password,role,username) values('12345','stagiaire','toto');
+insert into qcm.user(password,role,username) values('12345','stagiaire','Jean');
+insert into qcm.user(password,role,username) values('12345','stagiaire','Awaleh');
+insert into qcm.user(password,role,username) values('12345','stagiaire','Edna');
 Select * from qcm.user;
 
 insert into qcm.qcm(intitule,niveau,nbQuestions) values('Test Logique 1', 'Débutant', 3);
